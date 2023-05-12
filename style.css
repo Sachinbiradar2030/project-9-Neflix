@@ -1,0 +1,274 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  color: white;
+  background-color: #050b19;
+}
+header {
+  width: 100%;
+  max-height: 160vh;
+  padding: 10px 8%;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)),
+    url(/img/netfleix.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+nav img {
+  width: 200px;
+}
+nav div {
+  margin-top: 20px;
+  margin-left: 25%;
+}
+nav div select {
+  padding: 6px 25px;
+  background: hsla(0, 0%, 0%, 0.089);
+  color: white;
+  border: 0;
+margin-right: 10px;
+  font-size: 18px;
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+nav div select option {
+  background: white;
+  border: 0;
+}
+nav div button {
+  padding: 10px 25px;
+  color: white;
+  background: red;
+  border-radius: 5px;
+  border: 0;
+}
+main {
+  margin-bottom: 6%;
+}
+.first-section {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin-top: 10%;
+  margin-left: 50px;
+}
+.first-section h1 {
+  font-size: 70px;
+  width: 70%;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.first-section p {
+  font-size: 25px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.second-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.box-0 {
+  background: rgb(6, 2, 33);
+  width: 950px;
+  height: 150px;
+  box-shadow: 5px 5px 5px purple, -5px -5px 5px red;
+  padding: 25px;
+}
+.box-0 p {
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.email-button input {
+  background: transparent;
+  padding: 18px 90px;
+  flex: 1;
+  outline: 0;
+  cursor: pointer;
+  margin-right: 5px;
+  font-size: 15px;
+  color: white;
+  background-color: #000000a7;
+  border-radius: 4px;
+  border: 1px solid gray;
+}
+.email-button button {
+  background: #db0001;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  padding: 15px 30px;
+  border-radius: 4px;
+}
+::placeholder {
+  color: #cec6c6;
+  font-size: 15px;
+  font-weight: 500;
+}
+.border {
+  background: rgb(6, 2, 33);
+  max-width: 1200px;
+  min-height: 600px;
+  border-radius: 10px;
+}
+
+.first-box {
+  padding: 50px 12%;
+  font-size: 22px;
+}
+.row {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
+.text-col {
+  flex-basis: 50%;
+  margin-bottom: 20px;
+}
+.img-col {
+  flex-basis: 50%;
+  margin-bottom: 20px;
+}
+.img-col img {
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+.first-box h1 {
+  font-size: 50px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+/* ........faq....... */
+section.faq {
+  margin-top: 137%;
+  padding: 10px 12%;
+  color: white;
+  text-align: center;
+}
+.faq h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+.question-set {
+  margin: 60px auto;
+  width: 100%;
+  max-width: 750px;
+}
+.question-set li {
+  list-style: none;
+  width: 100%;
+  padding: 5px;
+}
+
+.question-set li label {
+  display: flex;
+  align-items: center;
+  padding: 35px;
+  padding-left: 30px;
+  font-size: 20px;
+  font-weight: 500;
+  background: #12254e;
+  margin-bottom: 2px;
+  cursor: pointer;
+  position: relative;
+}
+label::after {
+  content: "+";
+  font-size: 34px;
+  position: absolute;
+  right: 20px;
+  transition: transform 0.5s;
+}
+input[type="radio"] {
+  display: none;
+}
+.question-set .content {
+  background: #12254e;
+  text-align: left;
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s;
+}
+
+.question-set input[type="radio"]:checked + label + .content {
+  max-height: 600px;
+  padding: 30px 20px;
+}
+.question-set input[type="radio"]:checked + label::after {
+  transform: rotate(135deg);
+}
+.question-set label:hover {
+  background: #1e376d;
+}
+.content p {
+  font-size: 23px;
+}
+.align {
+  margin-left: 21%;
+  margin-bottom: 15%;
+}
+.align p {
+  font-size: 23px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+/* .......footer...... */
+.footer {
+  max-width: 70%;
+  margin: 1rem auto;
+  overflow: auto;
+  margin-bottom: 7%;
+}
+.footer,
+.footer a {
+  color: #fff;
+  font-size: 0.9rem;
+}
+.footer p {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+.footer .footer-cols {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+}
+.footer li {
+  line-height: 2;
+}
+div select {
+  padding: 6px 20px;
+  background: black;
+  color: white;
+  border: 0;
+  margin-right: 20px;
+  font-size: 18px;
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+div select option {
+  background: white;
+  border: 0;
+}
+.ni p {
+  margin-top: 35px;
+  font-size: 15px;
+}
