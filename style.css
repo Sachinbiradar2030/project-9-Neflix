@@ -14,7 +14,7 @@ header {
   max-height: 160vh;
   padding: 10px 8%;
   background-image: radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)),
-    url(/img/netfleix.png);
+    url(/netflix/netflix-img/netfleix.png);
   background-size: cover;
   background-position: center;
   position: relative;
